@@ -5,12 +5,12 @@
 class TkeySign < Formula
   desc "Tool to digitally sign files with TKey"
   homepage "https://tillitis.se/"
-  version "0.0.8"
+  version "1.0.0"
   license "GPLv2"
 
   on_macos do
-    url "https://github.com/tillitis/tkey-sign-cli/releases/download/v0.0.8/tkey-sign_0.0.8_Darwin_universal.tar.gz"
-    sha256 "8b7fc3e0f773ff1aca8e79c4e090272965f80cfb092aeec0329055b3171d955c"
+    url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.0.0/tkey-sign_1.0.0_Darwin_universal.tar.gz"
+    sha256 "5a0045010543596971c5f2a4cfa666d61e7b6adc3e00a7433c7b8f4f3921a7d8"
 
     def install
       bin.install "tkey-sign"
@@ -20,8 +20,8 @@ class TkeySign < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v0.0.8/tkey-sign_0.0.8_Linux_arm64.tar.gz"
-      sha256 "73b9e8d3b0384697151883e80c32dd5146ee45c5def083f8469ab6da65e1832a"
+      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.0.0/tkey-sign_1.0.0_Linux_arm64.tar.gz"
+      sha256 "a15197ef6af5051fed2b723636b6c2ec9bf6cf6d903c78fff7965ed3a023f2ab"
 
       def install
         bin.install "tkey-sign"
@@ -29,8 +29,8 @@ class TkeySign < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v0.0.8/tkey-sign_0.0.8_Linux_amd64.tar.gz"
-      sha256 "778f69c3a404f8c1f440f247cf63806601b553f1a4ae49f5ef89dd0d4a1fb683"
+      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.0.0/tkey-sign_1.0.0_Linux_amd64.tar.gz"
+      sha256 "bbc45c28f7885d10baa7136b37885650122362b2125ab65608ca05fe0f8d26fd"
 
       def install
         bin.install "tkey-sign"
