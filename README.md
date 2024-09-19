@@ -19,3 +19,10 @@ Or `brew tap tillitis/tkey` and then `brew install <formula>`.
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## License
+
+Unless otherwise noted, the project sources are licensed under the
+terms and conditions of the "BSD 2-Clause License", see the full
+license under [LICENSE.txt](/LICENSE.txt).
+
