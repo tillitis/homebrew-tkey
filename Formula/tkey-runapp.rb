@@ -5,12 +5,12 @@
 class TkeyRunapp < Formula
   desc "Tool to load an application binary onto the TKey"
   homepage "https://tillitis.se/"
-  version "0.0.1"
-  license "GPLv2"
+  version "0.0.2"
+  license "BSD-2-Clause"
 
   on_macos do
-    url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.1/tkey-runapp_0.0.1_Darwin_universal.tar.gz"
-    sha256 "f2a52ae2fa68677b3cbdc2972261df5e9f45e127776461b782de9ffc6dad8a71"
+    url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.2/tkey-runapp_0.0.2_Darwin_universal.tar.gz"
+    sha256 "d3796cb809ebb341e7cb090b1c96969676826bddb6c7f44741e0454be4cae39b"
 
     def install
       bin.install "tkey-runapp"
@@ -19,16 +19,16 @@ class TkeyRunapp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.1/tkey-runapp_0.0.1_Linux_arm64.tar.gz"
-      sha256 "39eced19a2a196b81280f59ea200c1ce858fa6d4d0f3c031575d7f291a51cc40"
+      url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.2/tkey-runapp_0.0.2_Linux_arm64.tar.gz"
+      sha256 "e613db9e256dd4ea29bb5a718eed77c4b3eac1aa1c8ad862de3c79acf013dbf4"
 
       def install
         bin.install "tkey-runapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.1/tkey-runapp_0.0.1_Linux_amd64.tar.gz"
-      sha256 "fbd34ea7918a69d21a77adf2c702a5d3d2c138cda727ab4e6265ad35c29b2ce6"
+      url "https://github.com/tillitis/tkey-devtools/releases/download/v0.0.2/tkey-runapp_0.0.2_Linux_amd64.tar.gz"
+      sha256 "9f2896c666a108cb079c9adadbc67142444b1ec72a983648bd16c300130632c6"
 
       def install
         bin.install "tkey-runapp"
