@@ -5,12 +5,12 @@
 class TkeySign < Formula
   desc "Tool to digitally sign files with TKey"
   homepage "https://tillitis.se/"
-  version "1.1.0"
+  version "1.1.1"
   license "BSD-2-Clause"
 
   on_macos do
-    url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.0/tkey-sign_1.1.0_Darwin_universal.tar.gz"
-    sha256 "64209f76f0334e8243ae59550722d721a0eac2af46b23a376f41822ee5a1b169"
+    url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.1/tkey-sign_1.1.1_Darwin_universal.tar.gz"
+    sha256 "4739212d38bb6740b569e0fe4012798f3df414d1a362411d403491f60fa129a4"
 
     define_method(:install) do
       bin.install "tkey-sign"
@@ -20,16 +20,16 @@ class TkeySign < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.0/tkey-sign_1.1.0_Linux_amd64.tar.gz"
-      sha256 "a23fae531702ae4e9c7d0aaa27d050633f9519d07c61fa4992caad98b7ab45bf"
+      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.1/tkey-sign_1.1.1_Linux_amd64.tar.gz"
+      sha256 "e96cabbed4c03943f796e1bfde55c4a115d1f8243b50ac4036bbef8f4ea55a81"
       define_method(:install) do
         bin.install "tkey-sign"
         man1.install "man/tkey-sign.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.0/tkey-sign_1.1.0_Linux_arm64.tar.gz"
-      sha256 "c92c7d90398a80579077cd2d3d7336e21cdb1ed67cec52b1973ecc3850239331"
+      url "https://github.com/tillitis/tkey-sign-cli/releases/download/v1.1.1/tkey-sign_1.1.1_Linux_arm64.tar.gz"
+      sha256 "372a1019d0aaf83225d2a2130e75d7c53cfab994c34c3e366773913c5cb2a56d"
       define_method(:install) do
         bin.install "tkey-sign"
         man1.install "man/tkey-sign.1"
